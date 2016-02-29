@@ -1,14 +1,8 @@
 <div class="row center">
-  <div class="col s6 offset-s3">
-    <div class="top-margin">
-      <h3>Login!</h3>
-      <%= form_for :session, url: login_path do |f| %>
-      <%= f.label :username %>
-      <%= f.text_field :username %>
-      <%= f.label :password %>
-      <%= f.password_field :password %>
-      <%= f.submit "Login", class: 'btn blue' %>
-      <% end %>
-    </div>
+  <div class="col s6">
+    <%= render partial: "partials/login_form" %>
+  </div>
+  <div class="col s6">
+    <%= render partial: "partials/new_user_form", locals: {user: :user} %>
   </div>
 </div>

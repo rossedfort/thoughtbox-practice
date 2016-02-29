@@ -57,3 +57,15 @@ input[type=password]:focus:not([readonly]) + label {
 .brand-logo {
   margin-left: 15px;
 }
+
+.login {
+  padding: 25px;
+  border: 1px solid #ccc;
+  box-shadow: 5px 5px 5px #ccc;
+}
+
+.new-user {
+  padding: 25px;
+  border: 1px solid #ccc;
+  box-shadow: 5px 5px 5px #ccc;
+}

@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
     if @user && @user.authenticate(params[:session][:password])
       session[:user_id] = @user.id
       flash[:messages] = "Welcome, #{@user.username}"
-      redirect_to @user
+      redirect_to links_path
     else
       flash.now[:errors] = "This account doesn't match our records"
       render :new
