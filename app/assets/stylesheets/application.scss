@@ -15,10 +15,18 @@
  */
 
  @import "materialize/components/color";
- $primary-color: color("gray", "lighten-2") !default;
+ $primary-color: color("grey", "lighten-1") !default;
  @import "materialize";
 
 
 .top-margin {
   margin-top: 100px;
+}
+
+.flash_messages {
+  color: #4caf50;
+}
+
+.flash_errors {
+  color: #f44336;
 }

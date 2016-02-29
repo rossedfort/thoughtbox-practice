@@ -6,10 +6,12 @@ class UsersController < ApplicationController
   def create
     user = User.new(user_params)
     if user.save
-      flash.now[:messages] = "Welcome, #{user.username}!"
+      flash[:messages] = "Welcome, #{user.username}!"
+      session[:user_id] = user.id
       redirect_to user_path(user)
     else
-      flash.now[:errors] = "Oops, something when wrong"
+      redirect_to :back
+      flash[:errors] = "Oops, something when wrong"
     end
   end
 
