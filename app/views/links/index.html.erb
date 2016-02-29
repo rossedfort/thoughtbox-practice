@@ -1,0 +1,31 @@
+<div class="row center">
+  <div class="col s6 offset-s3">
+    <div class="new-link center">
+      <h3>New Link!</h3>
+      <%= form_for :link, url: links_path do |f| %>
+      <%= f.label :title %>
+      <%= f.text_field :title %>
+      <%= f.label :url %>
+      <%= f.text_field :url %>
+      <%= f.submit 'Create Link!', class: 'btn blue' %>
+      <% end %>
+    </div>
+  </div>
+</div>
+<div class="links center top-margin">
+  <h3>All Links</h3>
+  <% @links.each do |link| %>
+  <div class="row">
+    <div class="col s6 offset-s3">
+      <div class="link center">
+        <p><%= link_to link.title, link.url %></p>
+        <% if link.read %>
+        <p>Read</p>
+        <% else %>
+        <p>Unread</p>
+        <% end %>
+      </div>
+    </div>
+  </div>
+  <% end %>
+</div>

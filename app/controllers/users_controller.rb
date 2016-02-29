@@ -11,7 +11,7 @@ class UsersController < ApplicationController
       redirect_to user_path(user)
     else
       redirect_to :back
-      flash[:errors] = "Oops, something when wrong"
+      flash[:errors] = user.errors.full_messages.join(', ')
     end
   end
 

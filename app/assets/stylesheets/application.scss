@@ -30,3 +30,30 @@
 .flash_errors {
   color: #f44336;
 }
+
+.link {
+  border: 1px solid #ccc;
+  box-shadow: 5px 5px 5px #ccc;
+}
+
+input[type=text]:focus:not([readonly]) {
+  border-bottom: 1px solid #2196F3;
+  box-shadow: 0 1px 0 0 #2196F3;
+}
+
+input[type=password]:focus:not([readonly]) {
+  border-bottom: 1px solid #2196F3;
+  box-shadow: 0 1px 0 0 #2196F3;
+}
+
+input[type=text]:focus:not([readonly]) + label {
+  color: #2196F3;
+}
+
+input[type=password]:focus:not([readonly]) + label {
+  color: #2196F3;
+}
+
+.brand-logo {
+  margin-left: 15px;
+}
