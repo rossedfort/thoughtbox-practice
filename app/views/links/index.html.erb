@@ -24,6 +24,10 @@
         <% else %>
         <p>Unread</p>
         <% end %>
+        <div class="link-buttons">
+          <%= button_to 'Edit', edit_link_path(link), method: :get, class: 'btn btn-small green' %>
+          <%= button_to 'Delete', link_path(link), method: :delete, class: 'btn btn-small red' %>
+        </div>
       </div>
     </div>
   </div>

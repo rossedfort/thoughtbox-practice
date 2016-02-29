@@ -69,3 +69,10 @@ input[type=password]:focus:not([readonly]) + label {
   border: 1px solid #ccc;
   box-shadow: 5px 5px 5px #ccc;
 }
+
+.btn-small {
+  font-size: 12px;
+  height: 24px;
+  line-height: 24px;
+  padding: 0 1rem;
+}
