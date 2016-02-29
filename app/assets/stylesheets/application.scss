@@ -13,3 +13,12 @@
  *= require_tree .
  *= require_self
  */
+
+ @import "materialize/components/color";
+ $primary-color: color("gray", "lighten-2") !default;
+ @import "materialize";
+
+
+.top-margin {
+  margin-top: 100px;
+}
