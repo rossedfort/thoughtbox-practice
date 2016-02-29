@@ -20,13 +20,14 @@
       <div class="link center">
         <p><%= link_to link.title, link.url, target: '_blank'%></p>
         <% if link.read %>
-        <p>Read</p>
+          <p>Read</p>
         <% else %>
-        <p>Unread</p>
+          <p>Unread</p>
         <% end %>
         <div class="link-buttons">
           <%= button_to 'Edit', edit_link_path(link), method: :get, class: 'btn btn-small green' %>
           <%= button_to 'Delete', link_path(link), method: :delete, class: 'btn btn-small red' %>
+          <%= button_to 'View', link_path(link), method: :get, class: 'btn btn-small blue' %>
         </div>
       </div>
     </div>

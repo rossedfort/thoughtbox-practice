@@ -8,6 +8,10 @@ class LinksController < ApplicationController
     end
   end
 
+  def show
+    @link = Link.find(params[:id])
+  end
+
   def create
     link = Link.new(link_params)
     link.user_id = current_user.id

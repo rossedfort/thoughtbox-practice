@@ -1,0 +1,14 @@
+<div class="row top-margin">
+  <div class="col s6 offset-s3">
+    <div class="link center">
+      <p><%= link_to @link.title, @link.url, target: '_blank'%></p>
+      <% if @link.read %>
+        <p>Read</p>
+      <% else %>
+        <p>Unread</p>
+      <% end %>
+      <p>created at: <%= @link.created_at.strftime("%m/%d/%Y at %I:%M%p") %></p>
+      <p>updated on: <%= @link.updated_at.strftime("%m/%d/%Y at %I:%M%p") %></p>
+    </div>
+  </div>
+</div>
