@@ -14,3 +14,13 @@
 //= require jquery_ujs
 //= require materialize-sprockets
 //= require_tree .
+
+$(document).ready(function(){
+  $('#markUnread').click(function(){
+    markUnread();
+  })
+
+  $('#markRead').click(function(){
+    markRead();
+  })
+});

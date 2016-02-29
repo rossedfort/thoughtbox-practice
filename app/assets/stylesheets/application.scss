@@ -75,6 +75,14 @@ input[type=password]:focus:not([readonly]) + label {
   height: 24px;
   line-height: 24px;
   padding: 0 1rem;
-  margin: 10px 50px;
+  margin: 10px;
+}
+
+.button_to {
   width: 75px;
+  display: inline;
+}
+
+button, p {
+  display: inline;
 }
