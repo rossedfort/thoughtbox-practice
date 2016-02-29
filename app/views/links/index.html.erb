@@ -18,7 +18,7 @@
   <div class="row">
     <div class="col s6 offset-s3">
       <div class="link center">
-        <p><%= link_to link.title, link.url %></p>
+        <p><%= link_to link.title, link.url, target: '_blank'%></p>
         <% if link.read %>
         <p>Read</p>
         <% else %>
