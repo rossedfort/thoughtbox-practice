@@ -19,7 +19,7 @@
   <% @links.each do |link| %>
   <div class="row">
     <div class="col s6 offset-s3">
-      <div class="link center" id="<%= link.id %>">
+      <div class="link <%= link.read %> center" id="<%= link.id %>">
         <h4><%= link_to link.title, link.url, target: '_blank'%></h4>
         <% if link.read %>
           <p>Read</p>

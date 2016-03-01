@@ -86,3 +86,7 @@ input[type=password]:focus:not([readonly]) + label {
 button, p {
   display: inline;
 }
+
+.true {
+  background-color: #ccc;
+}
