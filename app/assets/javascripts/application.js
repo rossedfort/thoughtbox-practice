@@ -15,7 +15,7 @@
 //= require materialize-sprockets
 //= require_tree .
 
-$(document).ready(function(){
+$(document).ready(function() {
   markUnread();
   markRead();
 });
