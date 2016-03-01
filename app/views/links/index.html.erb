@@ -12,19 +12,21 @@
     </div>
   </div>
 </div>
-<div class="links center top-margin">
+<div class="center top-margin">
   <h3>All Links</h3>
+</div>
+<div class="links center">
   <% @links.each do |link| %>
   <div class="row">
     <div class="col s6 offset-s3">
-      <div class="link center">
+      <div class="link center" id="<%= link.id %>">
         <h4><%= link_to link.title, link.url, target: '_blank'%></h4>
         <% if link.read %>
           <p>Read</p>
-          <button type="button" class="btn btn-small blue" id="markUnread" name="unread">Mark As Unread</button>
+          <button type="button" class="btn btn-small blue" id="markUnread">Mark As Unread</button>
         <% else %>
           <p>Unread</p>
-          <button type="button" class="btn btn-small blue" id="markRead" name="read">Mark As Read</button>
+          <button type="button" class="btn btn-small blue" id="markRead">Mark As Read</button>
         <% end %>
         <div class="link-buttons">
           <%= button_to 'Edit', edit_link_path(link), method: :get, class: 'btn btn-small green' %>

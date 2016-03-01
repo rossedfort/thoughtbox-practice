@@ -16,11 +16,6 @@
 //= require_tree .
 
 $(document).ready(function(){
-  $('#markUnread').click(function(){
-    markUnread();
-  })
-
-  $('#markRead').click(function(){
-    markRead();
-  })
+  markUnread();
+  markRead();
 });
