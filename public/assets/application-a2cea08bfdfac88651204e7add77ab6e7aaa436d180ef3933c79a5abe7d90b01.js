@@ -18414,9 +18414,7 @@ Picker.extend( 'pickadate', DatePicker )
 
 
 
-'use strict';
-
-const markRead = () => {
+markRead() {
   $('#markRead').on('click', function() {
     let id = $(this).parent()[0].id
     $.ajax({
@@ -18437,7 +18435,7 @@ const markRead = () => {
   });
 }
 
-const markUnread = () => {
+const markUnread(){
   $('#markUnread').on('click', function() {
     let id = $(this).parent()[0].id
     $.ajax({
