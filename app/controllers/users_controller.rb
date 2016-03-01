@@ -8,7 +8,7 @@ class UsersController < ApplicationController
     if user.save
       flash[:messages] = "Welcome, #{user.username}!"
       session[:user_id] = user.id
-      redirect_to user_path(user)
+      redirect_to links_path
     else
       redirect_to :back
       flash[:errors] = user.errors.full_messages.join(', ')
