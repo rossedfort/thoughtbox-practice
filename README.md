@@ -1,6 +1,7 @@
 # Thoughtbox
 
 [Project Spec](https://gist.github.com/stevekinney/82831c5b25029415ce8b#file-simulated-assessment-md)
+
 [Production App](http://ross-thoughtbox.herokuapp.com/)
 
 ### Progress
