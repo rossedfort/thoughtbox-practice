@@ -34,8 +34,8 @@ class LinksController < ApplicationController
       flash[:messages] = "Link Updated"
       redirect_to links_path
     else
-      flash.now[:errors] = link.erros.full_messages.join(", ")
-      render :edit
+      flash[:errors] = link.errors.full_messages.join(", ")
+      redirect_to :back
     end
   end
 
