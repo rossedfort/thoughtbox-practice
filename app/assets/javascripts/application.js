@@ -12,10 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require lodash
 //= require materialize-sprockets
 //= require_tree .
-
-$(document).ready(function() {
-  markUnread();
-  markRead();
-});

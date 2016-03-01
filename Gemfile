@@ -11,6 +11,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bcrypt'
 gem 'materialize-sass'
 gem 'responders'
+gem 'sprockets'
+gem 'lodash-rails'
+gem 'sprockets-es6'
 
 group :development, :test do
   gem 'pry'
