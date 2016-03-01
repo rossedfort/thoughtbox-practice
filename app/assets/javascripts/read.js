@@ -1,4 +1,4 @@
-markRead() {
+function markRead() {
   $('#markRead').on('click', function() {
     let id = $(this).parent()[0].id
     $.ajax({
@@ -19,7 +19,7 @@ markRead() {
   });
 }
 
-const markUnread(){
+function markUnread(){
   $('#markUnread').on('click', function() {
     let id = $(this).parent()[0].id
     $.ajax({
