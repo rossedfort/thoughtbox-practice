@@ -1,6 +1,6 @@
 function markRead() {
   $('#markRead').on('click', function() {
-    let id = $(this).parent()[0].id
+    var id = $(this).parent()[0].id
     $.ajax({
       type: 'PUT',
       url: '/api/v1/links/' + id,
@@ -19,9 +19,9 @@ function markRead() {
   });
 }
 
-function markUnread(){
+function markUnread() {
   $('#markUnread').on('click', function() {
-    let id = $(this).parent()[0].id
+    var id = $(this).parent()[0].id
     $.ajax({
       type: 'PUT',
       url: '/api/v1/links/' + id,
