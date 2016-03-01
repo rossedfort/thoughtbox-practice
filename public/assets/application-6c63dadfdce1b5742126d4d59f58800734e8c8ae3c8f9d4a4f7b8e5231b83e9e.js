@@ -18416,6 +18416,7 @@ Picker.extend( 'pickadate', DatePicker )
 
 function markRead() {
   $('#markRead').on('click', function() {
+    $(this).parent().addClass('true')
     var id = $(this).parent()[0].id
     $.ajax({
       type: 'PUT',

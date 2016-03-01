@@ -15816,3 +15816,8 @@ input[type=password]:focus:not([readonly]) + label {
 button, p {
   display: inline;
 }
+
+/* line 91, /Users/rossedfort/code/mod_4/lessons/thoughtbox-practice/app/assets/stylesheets/application.scss */
+.true {
+  background-color: #ccc;
+}
